@@ -3,5 +3,5 @@
 
 ## 内容简介：
 
-### 1、Reader_Movie
+### 1、ReaderMovie
 > 通过实战项目学习小程序api

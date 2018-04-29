@@ -1,3 +1,7 @@
-<view>
-  <text>hello</text>
+<view class="container">
+  <image src="/images/movie.jpg" class="user_avatar"></image>
+  <text class="user_name">Hello，竺潜</text>
+  <view class="moto_container">
+    <text class="moto">开启小程序之旅</text>
+  </view>
 </view>

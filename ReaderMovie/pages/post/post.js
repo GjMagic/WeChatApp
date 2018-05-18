@@ -1,5 +1,5 @@
 import postData from '../../data/posts-data';
-// let postData = require('../../data/posts-data');
+
 Page({
 
   /**
@@ -7,6 +7,14 @@ Page({
    */
   data: {
     postList: []
+  },
+
+  /* 跳转文章详情页 */
+  handlePostDetail (e) {
+    let { postId } = e.currentTarget.dataset;
+    wx.navigateTo({
+      url: './post-detail/post-detail'
+    })
   },
 
   /**

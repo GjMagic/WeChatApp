@@ -13,7 +13,7 @@ Page({
   handlePostDetail (e) {
     let { postId } = e.currentTarget.dataset;
     wx.navigateTo({
-      url: './post-detail/post-detail'
+      url: `./post-detail/post-detail?postId=${postId}`
     })
   },
 

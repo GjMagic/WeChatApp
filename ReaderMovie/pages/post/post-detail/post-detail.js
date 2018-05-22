@@ -16,8 +16,18 @@ Page({
     let { postId } = options;
     let postList = postData.postList[postId]
     this.setData({
-      ...postList
+      ...postList,
+      postId
     })
+  },
+
+  onCollectTap (e) {
+    console.log(this)
+    let { collected } = this.data;
+    this.setData({
+      collected: !collected
+    })
+    wx.setStorageSync('post_collection', collected)
   },
 
   /**
